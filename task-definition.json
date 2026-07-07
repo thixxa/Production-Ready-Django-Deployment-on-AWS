@@ -1,0 +1,33 @@
+{
+  "family": "django-app-task",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::485085996057:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "name": "django-app",
+      "image": "485085996057.dkr.ecr.us-east-1.amazonaws.com/django-app:latest",
+      "portMappings": [
+        {
+          "containerPort": 8000,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        { "name": "DJANGO_SECRET_KEY", "value": "temporary-change-this-later" },
+        { "name": "DJANGO_ALLOWED_HOSTS", "value": "*" },
+        { "name": "DJANGO_USE_HTTPS", "value": "false" }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/django-app",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ]
+}
