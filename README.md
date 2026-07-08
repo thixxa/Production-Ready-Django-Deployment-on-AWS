@@ -1,6 +1,6 @@
 # Django on AWS ECS Fargate — Production-Style CI/CD Deployment
 
-![CI/CD](https://github.com/USERNAME/REPO_NAME/actions/workflows/deploy.yml/badge.svg)
+![CI/CD](https://github.com/thixxa/Production-Ready-Django-Deployment-on-AWS/actions/workflows/deploy.yml/badge.svg)
 ![Docker](https://img.shields.io/badge/Docker-multi--stage-2496ED?logo=docker&logoColor=white)
 ![AWS ECS](https://img.shields.io/badge/AWS-ECS%20Fargate-FF9900?logo=amazonecs&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-6.0-092E20?logo=django&logoColor=white)
@@ -168,7 +168,3 @@ ECR images, the IAM role, task definitions, security groups, and the ECS cluster
 - Blue/green deployments via CodeDeploy instead of ECS rolling updates
 
 ---
-
-## 📄 License
-
-MIT
