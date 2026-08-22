@@ -1,3 +1,3 @@
-from django.db import models  # noqa: F401 - kept for future use
+from django.db import models 
 
-# Create your models here.
+# Create models here.

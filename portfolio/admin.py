@@ -1,3 +1,3 @@
-from django.contrib import admin  # noqa: F401 - kept for future use
+from django.contrib import admin
 
-# Register your models here.
+# Register models here.

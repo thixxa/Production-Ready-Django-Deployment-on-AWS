@@ -1,3 +1,3 @@
-from django.test import TestCase  # noqa: F401 - kept for future use
+from django.test import TestCase 
 
-# Create your tests here.
+# Create tests here.
